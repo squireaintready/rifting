@@ -1,0 +1,89 @@
+.balancesTab__container {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  color:#f9fafb;
+  border-radius: 8px;
+  border: 1px solid #363f45;
+  padding: 15px 0px;
+  width: 70rem;
+  /* width: 1000px; */
+  box-shadow: 0px 15px 24px 9px rgba(59,84,99,0.4);
+}
+
+.balancesTab__leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 2rem;
+  border-right: 1px solid black;
+  margin-left: 32px;
+}
+
+.balancesTab__title {
+  font-size: 10px;
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+}
+
+.balancesTab__balance {
+  font-size: 32px;
+  margin: 0;
+}
+
+.balancesTab__rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 8px;
+  margin-right: 32px;
+}
+
+.balancesTab__rightItems {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.balancesTab__rightItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 8px; */
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.balancesTab__name {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.balancesTab__USDC {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 650;
+  color:#00D395
+}
+
+@media only screen and (max-width: 1150px) {
+  .balancesTab__container {
+    width: 60rem;
+    /* width: 650px; */
+  }
+  .balancesTab__leftSide{
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .balancesTab__container {
+    width: 100vw;
+  }
+  .balancesTab__leftSide{
+    padding-right: 0.4rem;
+  }
+}
