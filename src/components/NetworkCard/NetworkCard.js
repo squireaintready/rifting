@@ -40,10 +40,10 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
         </div>
         <h5 className="networkCard__interestRate">{`${data.interestRate}%`}</h5>
         <div className="networkCard__info">
-          <p className="networkCard__infoText">{`Current Balance: ${data.USDC.toLocaleString(
+          <p className="networkCard__infoText">{`${data.name} holdings: $${data.USDC.toLocaleString(
             "en-US"
           )}`}</p>
-          <p className="networkCard__infoText">{`Interest Accrued: ${data.accruedInterest}`}</p>
+          <p className="networkCard__infoText">{`Interest accrued: $${data.accruedInterest}`}</p>
         </div>
 
         <div>
@@ -59,7 +59,7 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
               </p>
             </Button>
             <TextField
-              label="Amount in $"
+              label="$"
               variant="outlined"
               className="networkCard__input"
               value={input}
@@ -77,12 +77,12 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
             </Button>
           </form>
           {projectedReturns > 0 ? (
-            <p className="networkCard__projectedReturns">{`Projected Returns : $${projectedReturns.toLocaleString(
+            <p className="networkCard__projectedReturns">{`Projected returns : $${projectedReturns.toLocaleString(
               "en-US"
             )}`}</p>
           ) : (
             <p className="networkCard__projectedReturns">
-              Projected Returns : --
+              Projected returns : --
             </p>
           )}
         </div>
