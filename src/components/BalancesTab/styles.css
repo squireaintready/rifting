@@ -7,23 +7,20 @@
   border: 1px solid #363f45;
   padding: 15px 0px;
   width: 70rem;
-  /* width: 1000px; */
   box-shadow: 0px 15px 24px 9px rgba(59,84,99,0.4);
 }
 
 .balancesTab__leftSide {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-right: 2rem;
   border-right: 1px solid black;
-  margin-left: 32px;
+  margin-left: 24px;
 }
 
 .balancesTab__title {
   font-size: 10px;
-  margin-bottom: 4px;
-  padding-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .balancesTab__balance {
@@ -34,8 +31,7 @@
 .balancesTab__rightSide {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-left: 8px;
+  margin-left: 8px;
   margin-right: 32px;
 }
 
@@ -48,11 +44,8 @@
 .balancesTab__rightItem {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* margin-right: 8px; */
+  align-items: flex-start;
   padding: 4px;
-  border-radius: 10px;
 }
 
 .balancesTab__name {
@@ -72,7 +65,6 @@
 @media only screen and (max-width: 1150px) {
   .balancesTab__container {
     width: 60rem;
-    /* width: 650px; */
   }
   .balancesTab__leftSide{
     padding-right: 1rem;
