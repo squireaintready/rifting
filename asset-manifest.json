@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/rifting/static/css/main.3468bf83.chunk.css",
-    "main.js": "/rifting/static/js/main.4865c4fb.chunk.js",
-    "main.js.map": "/rifting/static/js/main.4865c4fb.chunk.js.map",
+    "main.js": "/rifting/static/js/main.4d2731e9.chunk.js",
+    "main.js.map": "/rifting/static/js/main.4d2731e9.chunk.js.map",
     "runtime-main.js": "/rifting/static/js/runtime-main.e02b9e94.js",
     "runtime-main.js.map": "/rifting/static/js/runtime-main.e02b9e94.js.map",
     "static/js/2.f83cf19d.chunk.js": "/rifting/static/js/2.f83cf19d.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.e02b9e94.js",
     "static/js/2.f83cf19d.chunk.js",
     "static/css/main.3468bf83.chunk.css",
-    "static/js/main.4865c4fb.chunk.js"
+    "static/js/main.4d2731e9.chunk.js"
   ]
 }
