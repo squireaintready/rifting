@@ -55,7 +55,7 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
               onClick={withdraw}
             >
               <p aria-label={name} className="networkCard__btnText">
-                Withdraw
+                SELL
               </p>
             </Button>
             <TextField
@@ -72,7 +72,7 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
               onClick={deposit}
             >
               <p aria-label={name} className="networkCard__btnText">
-                Deposit
+                BUY
               </p>
             </Button>
           </form>
