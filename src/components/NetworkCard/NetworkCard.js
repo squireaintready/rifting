@@ -20,12 +20,20 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
   };
 
   const withdraw = (e) => {
-    handleWithdraw(e.target.ariaLabel, input);
+    if(parseFloat(input) > 0){
+      handleWithdraw(e.target.ariaLabel, input);
+    }else{
+      alert('Please enter a number greater than 0')
+    }
     setInput("");
   };
 
   const deposit = (e) => {
-    handleDeposit(e.target.ariaLabel, input);
+    if(parseFloat(input) > 0){
+      handleDeposit(e.target.ariaLabel, input);
+    }else{
+      alert('Please enter a number greater than 0')
+    }
     setInput("");
   };
 
@@ -47,7 +55,7 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
         </div>
 
         <div>
-          <form className="networkCard__form">
+          <div className="networkCard__form">
             <Button
               size="small"
               variant="contained"
@@ -76,7 +84,7 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
                 BUY
               </p>
             </Button>
-          </form>
+          </div>
           {projectedReturns > 0 ? (
             <p className="networkCard__projectedReturns">{`projected returns : $${projectedReturns.toLocaleString(
               "en-US"
