@@ -5,13 +5,13 @@ import "./styles.css";
 import { v4 as uuid } from "uuid";
 
 const BalancesTab = ({ currentBalance, networksData }) => {
-  const [totalAccountValue, setTotalAccountValue] = useState('')
+  const [totalAccountValue, setTotalAccountValue] = useState(0)
 
   useEffect(() => {
     let temp = 0;
-    networksData.forEach(data => temp += parseFloat(data.USDC))
-    setTotalAccountValue(temp + currentBalance)
-  }, [])
+    networksData?.forEach(data => temp += parseFloat(data.USDC))
+    setTotalAccountValue((temp) + parseFloat(currentBalance))
+  }, [networksData, currentBalance])
 
   const leftTile = (title, balance) => (
     <div className="balancesTab__leftSide">
