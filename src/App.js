@@ -19,17 +19,18 @@ function App() {
   }, []);
 
   const handleDeposit = (name, input) => {
-    if (parseFloat(input) <= parseFloat(currentBalance)) {
-      setCurrentBalance((prev) => parseFloat(prev) - input);
+    input = parseFloat(input)
+    if (input <= currentBalance) {
+      setCurrentBalance((prev) => prev - input);
       setNetworksData(
         networksData.map((data) => {
           if (data.name === name) {
-            let temp = parseFloat(data.USDC) + parseFloat(input);
-            data.USDC = temp;
-            return data;
-          } else {
-            return data;
+            let temp = parseFloat(data.USDC) + input;
+            // data.USDC = temp;
+            // return data;
+            return {...data, USDC: temp};
           }
+          return data;
         })
       );
     } else {
@@ -37,21 +38,37 @@ function App() {
     }
   };
   const handleWithdraw = (name, input) => {
+    input = parseFloat(input)
     setNetworksData(
-      networksData.map((data) => {
-        if(data.name === name && data.USDC < input){
+      networksData.map(data =>{
+        if(data?.name === name && data?.USDC < input){
           alert("Cannot withdraw more than your current balance. Please try again.")
-        }
-        if (data.name === name && data.USDC >= input) {
-            setCurrentBalance((prev) =>  parseFloat(prev) + parseFloat(input));
-            let temp = parseFloat(data.USDC) - parseFloat(input);
-            data.USDC = temp;
-            return data;
+          return data;
+        }else if(data?.name === name && data?.USDC >= input){
+          setCurrentBalance(prev => prev + input);
+          let temp = parseFloat(data.USDC) - input;
+          return {...data, USDC: temp}
         }else{
           return data;
         }
       })
-    );
+    )
+    // setNetworksData(
+    //   networksData.map((data) => {
+    //     if (data?.name === name && data?.USDC < input) {
+    //       alert(
+    //         "Cannot withdraw more than your current balance. Please try again."
+    //       );
+    //     }
+    //     if (data?.name === name && data?.USDC >= input) {
+    //       setCurrentBalance((prev) => parseFloat(prev) + parseFloat(input));
+    //       let temp = parseFloat(data.USDC) - parseFloat(input);
+    //       data.USDC = temp;
+    //       return data;
+    //     }
+    //     return data;
+    //   })
+    // );
   };
 
   return (
