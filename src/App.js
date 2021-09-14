@@ -26,8 +26,6 @@ function App() {
         networksData.map((data) => {
           if (data.name === name) {
             let temp = parseFloat(data.USDC) + input;
-            // data.USDC = temp;
-            // return data;
             return {...data, USDC: temp};
           }
           return data;
@@ -53,22 +51,6 @@ function App() {
         }
       })
     )
-    // setNetworksData(
-    //   networksData.map((data) => {
-    //     if (data?.name === name && data?.USDC < input) {
-    //       alert(
-    //         "Cannot withdraw more than your current balance. Please try again."
-    //       );
-    //     }
-    //     if (data?.name === name && data?.USDC >= input) {
-    //       setCurrentBalance((prev) => parseFloat(prev) + parseFloat(input));
-    //       let temp = parseFloat(data.USDC) - parseFloat(input);
-    //       data.USDC = temp;
-    //       return data;
-    //     }
-    //     return data;
-    //   })
-    // );
   };
 
   return (
