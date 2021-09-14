@@ -39,7 +39,7 @@
 .networkCard__headerTitle {
   text-transform: lowercase;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
   margin:0;
 }
 
@@ -50,7 +50,7 @@
   margin:0;
   width: 80px;
   padding: 12px 12px;
-  border-radius: 99px;
+  border-radius: 10px;
   background: linear-gradient(to right, #00b09b, #96c93d);
   color:black;
 }
@@ -58,6 +58,7 @@
 .networkCard__infoText {
   margin: 0;
   font-size: 14px;
+  font-weight: 525;
   font-family: HelveticaNeue;
 }
 
@@ -68,10 +69,10 @@
 
 .networkCard__projectedReturns {
   margin-top: 4px;
-  font-size: 14px;
+  font-size: 12px;
   font-family: HelveticaNeue;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   opacity: 0.8;
 }
 
