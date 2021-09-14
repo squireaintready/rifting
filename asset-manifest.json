@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/rifting/static/css/main.ae626df9.chunk.css",
-    "main.js": "/rifting/static/js/main.317af527.chunk.js",
-    "main.js.map": "/rifting/static/js/main.317af527.chunk.js.map",
+    "main.css": "/rifting/static/css/main.8ea6a18b.chunk.css",
+    "main.js": "/rifting/static/js/main.2ab2e30c.chunk.js",
+    "main.js.map": "/rifting/static/js/main.2ab2e30c.chunk.js.map",
     "runtime-main.js": "/rifting/static/js/runtime-main.e02b9e94.js",
     "runtime-main.js.map": "/rifting/static/js/runtime-main.e02b9e94.js.map",
     "static/js/2.f83cf19d.chunk.js": "/rifting/static/js/2.f83cf19d.chunk.js",
     "static/js/2.f83cf19d.chunk.js.map": "/rifting/static/js/2.f83cf19d.chunk.js.map",
     "index.html": "/rifting/index.html",
-    "static/css/main.ae626df9.chunk.css.map": "/rifting/static/css/main.ae626df9.chunk.css.map",
+    "static/css/main.8ea6a18b.chunk.css.map": "/rifting/static/css/main.8ea6a18b.chunk.css.map",
     "static/js/2.f83cf19d.chunk.js.LICENSE.txt": "/rifting/static/js/2.f83cf19d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e02b9e94.js",
     "static/js/2.f83cf19d.chunk.js",
-    "static/css/main.ae626df9.chunk.css",
-    "static/js/main.317af527.chunk.js"
+    "static/css/main.8ea6a18b.chunk.css",
+    "static/js/main.2ab2e30c.chunk.js"
   ]
 }
