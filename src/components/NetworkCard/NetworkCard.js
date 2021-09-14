@@ -78,7 +78,7 @@ const NetworkCard = ({ data, handleDeposit, handleWithdraw }) => {
             </Button>
           </form>
           {projectedReturns > 0 ? (
-            <p className="networkCard__projectedReturns">{`Projected returns : $${projectedReturns.toLocaleString(
+            <p className="networkCard__projectedReturns">{`projected returns : $${projectedReturns.toLocaleString(
               "en-US"
             )}`}</p>
           ) : (
